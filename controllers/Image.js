@@ -1,10 +1,10 @@
 import Clarifai from 'clarifai';
 import { response } from 'express';
-const PAT = '';
-const USER_ID = '';       
-const APP_ID = '';
-const MODEL_ID = '';
-const MODEL_VERSION_ID = ''; 
+const PAT = 'process.env.PAT';
+const USER_ID = 'process.env.USER_ID';       
+const APP_ID = 'process.env.APP_ID';
+const MODEL_ID = 'process.env.MODEL_ID';
+const MODEL_VERSION_ID = 'process.env.MODEL_VERSION_ID'; 
 
 const handleApiCall = (req, res) => {
 
