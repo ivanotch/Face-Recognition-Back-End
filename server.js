@@ -7,18 +7,21 @@ import {handleSignin} from './controllers/Signin.js';
 import {handleProfile} from './controllers/Profile.js';
 import {handleImage, handleApiCall} from './controllers/Image.js';
 
+//alternative
+// connectionString : process.env.DATABASE_URL,
+//         ssl: {rejectUnauthorized: false},
+//         host: process.env.DB_HOST,
+//         port: 5432,
+//         user: process.env.DB_USER,
+//         password: process.env.DB_PW,
+//         database: process.env.DB_DB 
 
 
 const db = knex({
     client: 'pg',
     connection: {
         connectionString : process.env.DATABASE_URL,
-        ssl: {rejectUnauthorized: false},
-        host: process.env.DB_HOST,
-        port: 5432,
-        user: process.env.DB_USER,
-        password: process.env.DB_PW,
-        database: process.env.DB_DB 
+        ssl: true,
         
     } 
 });
