@@ -1,10 +1,10 @@
 import Clarifai from 'clarifai';
 import { response } from 'express';
-const PAT = process.env.PAT;
-const USER_ID = process.env.USER_ID;       
-const APP_ID = process.env.APP_ID;
-const MODEL_ID = process.env.MODEL_ID;
-const MODEL_VERSION_ID = process.env.MODEL_VERSION_ID; 
+const PAT = 'd7b2c2046d3746f3acd0a3bd8acb38ad';
+const USER_ID = 'wcu4h5ombdif';       
+const APP_ID = 'my-first-application';
+const MODEL_ID = 'face-detection';
+const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105'; 
 
 const handleApiCall = (req, res) => {
 
